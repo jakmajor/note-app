@@ -1,25 +1,60 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from "react-router-dom";
+
 
 function App() {
+
+
+
+
+
+
+
+
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
     </div>
   );
 }
+
+// "id": 1,
+// "title": "The Song About the Song",
+// "content": "This ithe songs about the show!",
+// "author": "Bryan Higgins",
+// "tags": []
+
+
+// switch syntax
+// function App() {
+//   return( 
+  
+//   <div>
+// <NavBar />
+//       <Switch>
+//         <Route exact path="/">
+//           <Home />
+//         </Route>
+//         <Route path="/actors">
+//           <Actors />
+//         </Route>
+//         <Route path="/directors">
+//           <Directors />
+//         </Route>
+//         <Route path="/movies">
+//           <Movies />
+//         </Route>
+//       </Switch>
+
+
+//   </div>
+//   )
+// }
+
 
 export default App;
