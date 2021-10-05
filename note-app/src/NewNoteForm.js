@@ -13,11 +13,6 @@ function NewNoteForm(onAddNote) {
     
     
 
-
-
-
-
-
 return (
     <form>
         <input type="text" placeholder="title" />
