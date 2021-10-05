@@ -15,7 +15,7 @@ function App() {
   const [notes, setNotes] = useState([])
 
   useEffect(() => {
-    getNotes();
+    getNotes(); 
   }, []) 
   
   const getNotes = () => {
