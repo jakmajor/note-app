@@ -8,7 +8,7 @@ import Search from "./Search";
 import Saved from "./Saved";
 import NoteContainer from "./NoteContainer";
 
-function App() {
+function App() { 
   // jak style :D
   const FETCH_URL = "http://localhost:4000/notes"
   // json-server --watch db.json --port=4000
@@ -16,7 +16,7 @@ function App() {
   const [notes, setNotes] = useState([])
 
   useEffect(() => {
-    getNotes();
+    getNotes(); 
   }, []) 
   
   const getNotes = () => {
