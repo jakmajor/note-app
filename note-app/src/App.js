@@ -10,7 +10,8 @@ import NoteContainer from "./NoteContainer";
 
 function App() {
   // jak style :D
-  const FETCH_URL = "http://localhost:3000/notes"
+  const FETCH_URL = "http://localhost:4000/notes"
+  // json-server --watch db.json --port=4000
 
   const [notes, setNotes] = useState([])
 
