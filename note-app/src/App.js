@@ -12,9 +12,12 @@ function App() {
   // jak style :D
   const FETCH_URL = "http://localhost:4000/notes"
   // json-server --watch db.json --port=4000
+  const [selectedTech, setSelectedTech] = useState("all")
 
+  
+  
   const [notes, setNotes] = useState([])
-
+  
   useEffect(() => {
     getNotes(); 
   }, []) 
@@ -24,6 +27,7 @@ function App() {
     .then(r => r.json())
     .then(json => setNotes(json))
   }
+  
 
   // creating new notes :D
   const createNewNote = (e, newNoteData) => {
@@ -38,16 +42,28 @@ function App() {
         "author": newNoteData.author,
         "content": newNoteData.content,
         "tags": newNoteData.tags
+        
       })
     }).then(() => getNotes)
+    e.target.reset()
   }
+  
+  function handleTagChange(e){
+      setSelectedTech(e.target.value);
+      }
+  //pas notes into
+      const notesToDisplay = notes.filter(note => {
+      if(selectedTech === "all") return true;
 
+      return note.tag === selectedTech
+      
+    })
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path="/NewNoteForm">
-          <NewNoteForm createNewNote={createNewNote} />
+          <NewNoteForm handleTagChange={handleTagChange} createNewNote={createNewNote} />
         </Route>
         <Route exact path="/Search">
           <Search />
