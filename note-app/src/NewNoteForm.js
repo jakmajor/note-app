@@ -8,7 +8,11 @@ function NewNoteForm({createNewNote, handleTagChange}) {
   const [tags, setTags] = useState("")
 
   function resetStates(){
-    // setTitle setAuthor setContent setTags
+    setTitle("");
+     setAuthor("");
+      setContent("");
+       setTags("");
+
   }
 
 
