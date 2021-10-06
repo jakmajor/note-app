@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Dropdown } from 'react-bootstrap';
 import Note from "./Note";
 
 
-function Search({ notes }) {
+function Search({ notes, deleteNote }) {
     const [selectedTech, setSelectedTech] = useState("all")
 
     const notesToDisplay = notes.filter(note => {
@@ -26,7 +25,7 @@ function Search({ notes }) {
             </select>
                 <div className="note-in-search-list">
             {notesToDisplay.map(note =>
-                <Note note={note} />
+                <Note note={note} deleteNote={deleteNote} />
             )}
             </div>
         </div>
