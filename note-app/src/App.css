@@ -9,6 +9,7 @@
   -o-transition: all .2s ease;
   transition: all .2s ease;
 }
+*:focus { outline: none; }
 
 body{
   background-color: #F8F7FF;
@@ -90,4 +91,28 @@ h2{
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.nav-link, .nav-link:active{
+  color: #9381FF !important;
+}
+.new-note-form *{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.new-note-form input, .new-note-form select{
+  background-color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+.new-note-form textarea{
+  background-color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+.submit-button{
+  
 }
