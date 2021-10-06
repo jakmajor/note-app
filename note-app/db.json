@@ -3,30 +3,100 @@
     {
       "id": 1,
       "title": "The Song About the Song",
-      "content": "This ithe songs about the show!",
+      "content": "Thith ith a song about the show!",
       "author": "Bryan Higgins",
       "tags": "Ruby"
     },
     {
       "id": 2,
-      "title": "My Pickle",
-      "content": "...may my pickle stroll about hungryand fthe sky over him with one bite.",
+      "title": "My P*ckle",
+      "content": "...may my p*ckle stroll about hungry and f the sky over him with one bite.",
       "author": "Jon Glass",
       "tags": "Rails"
     },
     {
       "id": 3,
       "title": "Ithaca",
-      "content": "When you set out on your journey to Ithaot carry them within your soul, if your soul does not set them up before you. Pray that the road is long.... ",
+      "content": "When you set out on your journey to Ithaot, carry them within your soul, if your soul does not set them up before you. Pray that the road is long.... ",
       "author": "T Y Alevizos",
       "tags": "Git"
     },
     {
       "id": 4,
       "title": "The Visitor",
-      "content": "A ferret visited my house with little tiny cymbals. I felt that I should pur friends but still you'll have to pay.",
+      "content": "A ferret visited my house with little tiny cymbals. I felt that I should purr friends but still you'll have to pay.",
       "author": "Alan R. Turner.",
       "tags": "Javascript"
+    },
+    {
+      "title": "Images in React",
+      "author": "Steve",
+      "content": "Images have to be imported, not just pointed at.\n\nex: `import image from './filepath'`\n\n\"import\", \"image\" and \"from\" are all fixed, the filepath is variable",
+      "tags": "react",
+      "id": 5
+    },
+    {
+      "title": "Functions as Props",
+      "author": "Steve",
+      "content": "When passing a callback function as a prop {functionName()} will invoke it immediately, but {() => functionName()} won't",
+      "tags": "react",
+      "id": 6
+    },
+    {
+      "title": "setState() Tip",
+      "author": "Steve",
+      "content": "setState() just makes state equal to whatever is in the parens.\n\nex: `setState(true)` is the same as `let setState = true`",
+      "tags": "react",
+      "id": 7
+    },
+    {
+      "title": "Workflow Tip",
+      "author": "Steve",
+      "content": "When your're coding, just console.log() stuff. Keep your flow going. console.log(fetchtarget) is fun.",
+      "tags": "javascript",
+      "id": 8
+    },
+    {
+      "title": "Props explained",
+      "author": "Steve",
+      "content": "When you say <ComponentName x={propName}>, you're actually making a key value pair. Everything is in the props object, passing down to the called child component.\n\nex: <... value=  type= etc.",
+      "tags": "react",
+      "id": 9
+    },
+    {
+      "title": "Make a branch in Git",
+      "author": "Steve",
+      "content": "If you want to move to a branch that already exists, `git checkout branchname` will get you there.\nIf you want to create and move to a new branch `git checkout -b branchname`",
+      "tags": "git",
+      "id": 10
+    },
+    {
+      "title": "Overflow uses",
+      "author": "Jak",
+      "content": "Use the properties of white-space overflow and text overflow to create a preview of text",
+      "tags": "css",
+      "id": 11
+    },
+    {
+      "title": "Vertical percentage quirk",
+      "author": "Steve",
+      "content": "Vertical percentages are relative to container width, not height",
+      "tags": "css",
+      "id": 12
+    },
+    {
+      "title": "Rails test",
+      "author": "Steve",
+      "content": "This is a test to see if the rails tag is working. Ignore me plz",
+      "tags": "rails",
+      "id": 13
+    },
+    {
+      "title": "The wrong Ruby",
+      "author": "Steve",
+      "content": "A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum.",
+      "tags": "ruby",
+      "id": 14
     }
   ]
 }

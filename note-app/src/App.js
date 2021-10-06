@@ -50,6 +50,18 @@ function App() {
     e.target.reset()
   }
 
+  const deleteNote = (id) => {
+  
+    fetch(`${FETCH_URL}/${id}`, {
+        method: 'DELETE',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        })
+        .then(response => response.json())
+        .then(() => getNotes()) 
+    } 
+
 
   return (
     <div className="container">
@@ -68,7 +80,7 @@ function App() {
               <NewNoteForm createNewNote={createNewNote} />
             </Route>
             <Route exact path="/Search">
-              <Search notes={notes} />
+              <Search notes={notes} deleteNote={deleteNote} />
             </Route>
             <Route exact path="/Saved">
               <Saved />
@@ -77,11 +89,12 @@ function App() {
               <div className="container">
                 <div className="row">
                   <div className="col-4">
-                    <Home notes={notes} setSelectedNote={setSelectedNote} />
+                    <Home notes={notes} setSelectedNote={setSelectedNote} deleteNote={deleteNote} />
                   </div>
                   <div className="col-8">
-                    <Note note={selectedNote} />
+                    <Note note={selectedNote} deleteNote={deleteNote} />
                   </div>
+
                 </div>
               </div>
             </Route>
