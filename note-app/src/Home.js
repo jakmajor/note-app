@@ -1,16 +1,16 @@
 import React from "react";
 import Note from "./Note";
 
-function Home({notes}) {
+function Home({ notes, setSelectedNote }) {
     return (
-        <div>
-            <h2>Home!</h2>
-            <p>No errors</p>
-            {notes.map(note => <Note note={note}/>)}
+        <div className="note-list">
+            {notes.map(note =>
+                <div onClick={() => setSelectedNote(note)}>
+                    <Note note={note} />
+                </div>
+            )}
         </div>
     )
 }
 
 export default Home;
-
-// [...this.props.myList].reverse().map(createListItem, this) shows newest note
