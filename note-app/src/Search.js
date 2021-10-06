@@ -24,9 +24,11 @@ function Search({ notes }) {
                 <option value="git">Git</option>
                 <option value="rails">Rails</option>
             </select>
+                <div className="note-in-search-list">
             {notesToDisplay.map(note =>
                 <Note note={note} />
             )}
+            </div>
         </div>
     )
 }
