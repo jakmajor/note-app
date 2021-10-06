@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-function NewNoteForm({ createNewNote, handleTagChange }) {
+function NewNoteForm({ createNewNote}) {
   const [title, setTitle] = useState("")
   const [author, setAuthor] = useState("")
   const [content, setContent] = useState("")

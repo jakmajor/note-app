@@ -13,7 +13,6 @@ function App() {
   // jak style :D
   const FETCH_URL = "http://localhost:4000/notes"
   // json-server --watch db.json --port=4000
-  const [selectedTech, setSelectedTech] = useState("all")
   const [notes, setNotes] = useState([])
   const [selectedNote, setSelectedNote] = useState({ title: '', content: '' })
 
@@ -51,15 +50,6 @@ function App() {
     e.target.reset()
   }
 
-  function handleTagChange(e) {
-    setSelectedTech(e.target.value);
-  }
-  //pas notes into
-  const notesToDisplay = notes.filter(note => {
-    if (selectedTech === "all") return true;
-
-    return note.tag === selectedTech
-  })
 
   return (
     <div className="container">
@@ -75,10 +65,10 @@ function App() {
         <div className="col">
           <Switch>
             <Route exact path="/NewNoteForm">
-              <NewNoteForm handleTagChange={handleTagChange} createNewNote={createNewNote} />
+              <NewNoteForm createNewNote={createNewNote} />
             </Route>
             <Route exact path="/Search">
-              <Search />
+              <Search notes={notes} />
             </Route>
             <Route exact path="/Saved">
               <Saved />
