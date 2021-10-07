@@ -101,13 +101,13 @@ h2{
   margin-bottom: 10px;
 }
 
-.new-note-form input, .new-note-form select{
+input{
   background-color: #fff;
   border: 0px;
   border-radius: 6px;
   padding: 10px 14px;
 }
-.new-note-form textarea{
+textarea{
   background-color: #fff;
   border: 0px;
   border-radius: 6px;
@@ -120,10 +120,45 @@ h2{
 .delete-button{
   border-radius: 4px;
   padding: 5px 8px;
-  border: 1px solid #9381FF;
   width: max-content !important;
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block;
+  background-color: #9381FF !important;
+  color: white;
+  border: 0px solid transparent !important;
+}
+.selected-note-wrapper{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(0,0,0,.05);
+  padding: 20px;
+}
+.marg-me-top{
+  margin-top:60px
+}
+.logo{
+  font-size: 18px;
+  margin-left: 13px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: max-content;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(0,0,0,.05);
+}
+.de-pad{
+  padding: 0px;
+}
+select{
+  background-color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  padding: 10px 14px; 
+}
+.new-note-form{
+  margin-top: 50px;
+}
+.marg-me-top-sm{
+  margin-top: 20px;
 }

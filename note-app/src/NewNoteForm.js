@@ -17,8 +17,8 @@ function NewNoteForm({ createNewNote}) {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-4">
+      <div className="row justify-content-center">
+        <div className="col-7">
           <form className="new-note-form" onSubmit={(e) => createNewNote(e, { title: title, author: author, content: content, tags: tags })}>
             <input onChange={(e) => setTitle(e.target.value)} text="text" placeholder="title" />
             <input onChange={(e) => setAuthor(e.target.value)} text="text" placeholder="author" />
