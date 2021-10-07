@@ -65,15 +65,15 @@ function App() {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="col">
-
+      <div className="row marg-me-top-sm h-100">
+        <div className="col my-auto">
+          <h3 className="logo">{`<Notes/>`}</h3>
         </div>
         <div className="col-4">
           <NavBar />
         </div>
       </div>
-      <div className="row">
+      <div className="row marg-me-top">
         <div className="col">
           <Switch>
             <Route exact path="/NewNoteForm">
@@ -82,9 +82,6 @@ function App() {
             <Route exact path="/Search">
               <Search notes={notes} deleteNote={deleteNote} />
             </Route>
-            <Route exact path="/Saved">
-              <Saved />
-            </Route>
             <Route exact path="/">
               <div className="container">
                 <div className="row">
@@ -92,9 +89,10 @@ function App() {
                     <Home notes={notes} setSelectedNote={setSelectedNote} deleteNote={deleteNote} />
                   </div>
                   <div className="col-8">
-                    <Note note={selectedNote} deleteNote={deleteNote} />
+                    <div className="selected-note-wrapper">
+                      <Note note={selectedNote} deleteNote={deleteNote} />
+                    </div>
                   </div>
-
                 </div>
               </div>
             </Route>
