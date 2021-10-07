@@ -129,6 +129,9 @@ textarea{
   color: white;
   border: 0px solid transparent !important;
 }
+.delete-button:hover{
+  background-color: rgba(147, 129, 255,.8) !important;
+}
 .selected-note-wrapper{
   background-color: #fff;
   border-radius: 10px;
