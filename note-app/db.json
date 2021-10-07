@@ -1,34 +1,6 @@
 {
   "notes": [
     {
-      "id": 1,
-      "title": "The Song About the Song",
-      "content": "Thith ith a song about the show!",
-      "author": "Bryan Higgins",
-      "tags": "Ruby"
-    },
-    {
-      "id": 2,
-      "title": "My P*ckle",
-      "content": "...may my p*ckle stroll about hungry and f the sky over him with one bite.",
-      "author": "Jon Glass",
-      "tags": "Rails"
-    },
-    {
-      "id": 3,
-      "title": "Ithaca",
-      "content": "When you set out on your journey to Ithaot, carry them within your soul, if your soul does not set them up before you. Pray that the road is long.... ",
-      "author": "T Y Alevizos",
-      "tags": "Git"
-    },
-    {
-      "id": 4,
-      "title": "The Visitor",
-      "content": "A ferret visited my house with little tiny cymbals. I felt that I should purr friends but still you'll have to pay.",
-      "author": "Alan R. Turner.",
-      "tags": "Javascript"
-    },
-    {
       "title": "Images in React",
       "author": "Steve",
       "content": "Images have to be imported, not just pointed at.\n\nex: `import image from './filepath'`\n\n\"import\", \"image\" and \"from\" are all fixed, the filepath is variable",

@@ -58,8 +58,11 @@ h2{
   }
 }
 .note-wrapper{
-  padding: 14px;
-  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(0,0,0,.05);
+  padding: 20px;
+  margin-bottom: 15px;
 }
 .note-list .note-wrapper{
   cursor: pointer;
@@ -81,7 +84,7 @@ h2{
   font-size: 9px;
 }
 .note-list .note-wrapper:hover{
-  border-bottom: 2px solid #FFD8BE;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(255,216,190,1)
 }
 .tag{
   border-radius: 4px;
@@ -132,7 +135,7 @@ textarea{
 .delete-button:hover{
   background-color: rgba(147, 129, 255,.8) !important;
 }
-.selected-note-wrapper{
+.selected-note-wrapper .note-wrapper{
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0.5em 0.5em -0.4em rgba(0,0,0,.05);
