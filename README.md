@@ -5,11 +5,13 @@ A note web application with programmers in mind! Write your notes and tag your n
 ## Setup 
 
 Navigate to your terminal, clone down this repository, & navigate to the project directory:
+
 `cd note-app` 
 
 Once inside the directory, run npm start & npm install: 
 
-`npm install` `npm start`
+`npm install`
+`npm start`
 
 ### built with: 
 HTML, CSS & React.js 
